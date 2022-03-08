@@ -15,7 +15,6 @@ def convert_bool_to_answer(argument: bool):
     # For instance, if argument is True then return "Yes"
 
 
-
 def display_list(values: List, indent=""):
     """Display the provided list when iterating and printing every indented value."""
     # iterate through all of the values inside of the list,
