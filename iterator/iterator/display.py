@@ -22,6 +22,7 @@ def display_list(values: List, indent=""):
     # displaying them in the following fashion as an example:
     for index in range(len(values)):
         print(f"{indent}2**{int(math.log(values[index], 2))} = {values[index]}")
+    # print(f"{indent}2**{index} = {values}")
     # 2**0 = 4
     # 2**1 = 8
     # 2**2 = 16
