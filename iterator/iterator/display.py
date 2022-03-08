@@ -1,6 +1,7 @@
 """Print values and lists of values."""
 
 from typing import List
+import math
 
 
 def convert_bool_to_answer(argument: bool):
@@ -20,7 +21,7 @@ def display_list(values: List, indent=""):
     # iterate through all of the values inside of the list,
     # displaying them in the following fashion as an example:
     for index in range(len(values)):
-        print(f"{indent}2**{index} = {values[index]}")
+        print(f"{indent}2**{int(math.log(values[index], 2))} = {values[index]}")
     # 2**0 = 4
     # 2**1 = 8
     # 2**2 = 16
